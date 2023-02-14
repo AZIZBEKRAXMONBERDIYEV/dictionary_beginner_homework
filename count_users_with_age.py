@@ -10,7 +10,7 @@ def count_users_with_age(data:list, age:int) -> int:
     """
     s=0
     for i in data:
-        if i[age]==age:
+        if i['age']==age:
             s+=1
     return s
 

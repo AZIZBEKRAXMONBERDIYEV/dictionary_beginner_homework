@@ -13,10 +13,12 @@ def get_max_age_user_name(data:list) -> str:
         if type(i['age'])==int:
             l.append(i['age'])
     s=max(l)
+    g=[]
     for w in data:
         if s==w['age']:
             d=w['name']
-    return str(d)
+            g.append(d)
+    return g
 data = [
   {
     'name': 'John', 
